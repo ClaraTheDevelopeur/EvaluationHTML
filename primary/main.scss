@@ -276,3 +276,154 @@ $color-card: (
     }
   }
 }
+/******** TABLEAU **********/
+.tableau {
+  h2 {
+    font-weight: bold;
+    font-size: 1.6em;
+    text-align: center;
+    color: $green;
+  }
+  p {
+    margin: 10px;
+    @media screen and (max-width: 500px) {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-align: center;
+      text-overflow: ellipsis;
+    }
+  }
+}
+table {
+  margin: 0 auto;
+  font-size: 0.8em;
+  th {
+    background-color: $blue;
+  }
+  td {
+    color: $blue;
+  }
+}
+/******** PAGINATION ********/
+.pagination {
+  justify-content: space-around;
+
+  li {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: #c5c5a9;
+    border: black;
+  }
+}
+/*********** FORMULAIRE **********/
+
+.formulaire {
+  text-align: center;
+  margin: 20px 20px 20px 20px;
+  border-top: 1px solid $blue;
+  border-bottom: 1px solid $blue;
+  padding: 10px;
+  h5 {
+    margin: 15px 0 30px 0;
+    font-weight: bold;
+  }
+  .separation {
+    border: 1px solid $orange;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+.corpsformu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+
+  .groupe {
+    margin-bottom: 5px;
+    display: flex;
+    .label {
+      display: flex;
+      flex-direction: column;
+      input {
+        padding-left: 22px;
+      }
+      svg {
+        position: relative;
+        color: $blue;
+        top: -21px;
+        left: 3px;
+      }
+    }
+  }
+}
+.groupe {
+  .dons {
+    margin-right: 10px;
+    label {
+      margin-right: 10px;
+    }
+  }
+}
+.btn-dark {
+  background-color: $orange;
+  border: $orange;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+
+  &:hover {
+    opacity: 0.4;
+    transition: 1s ease-in-out;
+  }
+}
+.modal {
+  .modal-header {
+    h5 {
+      font-size: 1.5em;
+    }
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: $green;
+
+  .nous {
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-bottom: 5px;
+      margin-top: 10px;
+
+      &::before {
+        content: "•";
+        color: $orange;
+        margin-right: 5px;
+        font-weight: bold;
+      }
+      a {
+        color: black;
+      }
+    }
+  }
+}
+.icons {
+  a {
+    display: block;
+    margin-right: 30px;
+    margin-top: 5px;
+    font-size: 40px;
+    height: 30px;
+  }
+  svg {
+    color: $orange;
+  }
+}
