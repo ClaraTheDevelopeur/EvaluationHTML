@@ -1,0 +1,22 @@
+{
+  "name": "evaluationhtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaraTheDevelopeur/EvaluationHTML.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaraTheDevelopeur/EvaluationHTML/issues"
+  },
+  "homepage": "https://github.com/ClaraTheDevelopeur/EvaluationHTML#readme",
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
+}
