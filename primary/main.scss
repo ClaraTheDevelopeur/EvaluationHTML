@@ -54,3 +54,225 @@ nav ul {
     font-size: 40px;
   }
 }
+/********* BARRE DONATION *********/
+.donation {
+  background-color: $green;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  height: 40px;
+  width: 100%;
+  margin: 40px 0;
+  padding: 8px;
+  top: 220px;
+
+  a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+}
+
+/********* MATCH CARITATIF *********/
+.match {
+  height: 100px;
+  border-radius: 10px;
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  display: block;
+  background-color: $orange;
+  transition: 0.8s;
+  &:hover {
+    opacity: 0.7;
+    transition: 0.8s;
+    letter-spacing: 2px;
+  }
+  h2 {
+    position: relative;
+    color: $black;
+    font-weight: bolder;
+    font-size: 1.7em;
+    top: 25px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+.match:hover + .acces,
+.acces:hover {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.8s;
+}
+.acces {
+  position: relative;
+  text-align: center;
+  display: block;
+  top: -55px;
+  transform: translateY(-30px);
+  opacity: 0.4;
+  transition: 0.8s;
+  h5 {
+    font-size: 1em;
+  }
+  a {
+    color: $orange;
+    display: block;
+  }
+}
+
+/********* CARD *********/
+.card {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  border: white;
+  margin-bottom: 60px;
+}
+@mixin cards($border, $color, $radius) {
+  border: 1px solid;
+  color: $black;
+  border-radius: 10px;
+}
+
+$color-card: (
+  "1": $green,
+  "2": $blue,
+  "3": $orange,
+);
+@each $number, $color in $color-card {
+  .card#{$number} {
+    background-color: $color;
+  }
+}
+/********* CARD 1 *********/
+.card1 {
+  @include cards(1px, $black, 10px);
+  padding-bottom: 10px;
+  img {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+  h5 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bolder;
+  }
+  p {
+    @media screen and (max-width: 500px) {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-align: center;
+      text-overflow: ellipsis;
+    }
+    &::first-letter {
+      font-size: 1.7em;
+    }
+  }
+  button {
+    background-color: white;
+    color: $green;
+    border: $green;
+    float: right;
+    border-radius: 5px;
+    height: 35px;
+    transition: 2s ease-in-out;
+    &:hover {
+      opacity: 0.4;
+      transition: 2s ease-in-out;
+    }
+  }
+}
+/********* CARD 2 *********/
+.card2 {
+  @include cards(1px, $black, 10px);
+  margin-top: 30px;
+  padding-bottom: 10px;
+  img {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+  h5 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bolder;
+  }
+  p {
+    @media screen and (max-width: 500px) {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-align: center;
+      text-overflow: ellipsis;
+    }
+    &::first-letter {
+      font-size: 1.7em;
+    }
+  }
+  button {
+    background-color: white;
+    color: $blue;
+    border: $blue;
+    float: right;
+    border-radius: 5px;
+    height: 35px;
+    transition: 2s ease-in-out;
+    &:hover {
+      opacity: 0.4;
+      transition: 2s ease-in-out;
+    }
+  }
+}
+/********* CARD 3 *********/
+.card3 {
+  @include cards(1px, $black, 10px);
+  margin-top: 30px;
+  padding-bottom: 10px;
+  img {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+  h5 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bolder;
+  }
+  p {
+    @media screen and (max-width: 500px) {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-align: center;
+      text-overflow: ellipsis;
+    }
+    &::first-letter {
+      font-size: 1.7em;
+    }
+  }
+  button {
+    background-color: white;
+    color: $orange;
+    border: $orange;
+    float: right;
+    border-radius: 5px;
+    height: 35px;
+    transition: 2s ease-in-out;
+    &:hover {
+      opacity: 0.4;
+      transition: 2s ease-in-out;
+    }
+  }
+}
