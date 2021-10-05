@@ -112,3 +112,46 @@ h2 {
     }
   }
 }
+// FOOTER
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: $green;
+
+  .nous {
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-bottom: 5px;
+      margin-top: 10px;
+
+      &::before {
+        content: "•";
+        color: $orange;
+        margin-right: 5px;
+        font-weight: bold;
+      }
+      a {
+        color: black;
+      }
+    }
+  }
+}
+.icons {
+  a {
+    display: block;
+    margin-right: 30px;
+    margin-top: 5px;
+    font-size: 40px;
+    height: 30px;
+  }
+  svg {
+    color: $orange;
+  }
+}
+.année {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

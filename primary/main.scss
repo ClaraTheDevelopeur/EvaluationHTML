@@ -80,7 +80,6 @@ nav ul {
   width: 350px;
   margin: 0 auto;
   margin-bottom: 60px;
-  display: block;
   background-color: $orange;
   transition: 0.8s;
   &:hover {
@@ -341,7 +340,6 @@ table {
 }
 .corpsformu {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin: 20px 0;
@@ -426,4 +424,9 @@ footer {
   svg {
     color: $orange;
   }
+}
+.année {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

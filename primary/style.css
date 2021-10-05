@@ -76,7 +76,6 @@ nav ul a {
   width: 350px;
   margin: 0 auto;
   margin-bottom: 60px;
-  display: block;
   background-color: #fe895e;
   transition: 0.8s;
 }
@@ -347,7 +346,6 @@ table td {
 
 .corpsformu {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin: 20px 0;
@@ -423,6 +421,12 @@ footer .nous li a {
 }
 .icons svg {
   color: #fe895e;
+}
+
+.année {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
