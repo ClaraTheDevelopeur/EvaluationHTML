@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 /*font-family: 'Raleway', sans-serif;*/
@@ -277,6 +278,151 @@ nav ul a {
 .card3 button:hover {
   opacity: 0.4;
   transition: 2s ease-in-out;
+}
+
+/******** TABLEAU **********/
+.tableau h2 {
+  font-weight: bold;
+  font-size: 1.6em;
+  text-align: center;
+  color: #c5c5a9;
+}
+.tableau p {
+  margin: 10px;
+}
+@media screen and (max-width: 500px) {
+  .tableau p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+}
+
+table {
+  margin: 0 auto;
+  font-size: 0.8em;
+}
+table th {
+  background-color: #a2c2eb;
+}
+table td {
+  color: #a2c2eb;
+}
+
+/******** PAGINATION ********/
+.pagination {
+  justify-content: space-around;
+}
+.pagination li {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.pagination a {
+  color: #c5c5a9;
+  border: black;
+}
+
+/*********** FORMULAIRE **********/
+.formulaire {
+  text-align: center;
+  margin: 20px 20px 20px 20px;
+  border-top: 1px solid #a2c2eb;
+  border-bottom: 1px solid #a2c2eb;
+  padding: 10px;
+}
+.formulaire h5 {
+  margin: 15px 0 30px 0;
+  font-weight: bold;
+}
+.formulaire .separation {
+  border: 1px solid #fe895e;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.corpsformu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.corpsformu .groupe {
+  margin-bottom: 5px;
+  display: flex;
+}
+.corpsformu .groupe .label {
+  display: flex;
+  flex-direction: column;
+}
+.corpsformu .groupe .label input {
+  padding-left: 22px;
+}
+.corpsformu .groupe .label svg {
+  position: relative;
+  color: #a2c2eb;
+  top: -21px;
+  left: 3px;
+}
+
+.groupe .dons {
+  margin-right: 10px;
+}
+.groupe .dons label {
+  margin-right: 10px;
+}
+
+.btn-dark {
+  background-color: #fe895e;
+  border: #fe895e;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+}
+.btn-dark:hover {
+  opacity: 0.4;
+  transition: 1s ease-in-out;
+}
+
+.modal .modal-header h5 {
+  font-size: 1.5em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #c5c5a9;
+}
+footer .nous ul {
+  list-style: none;
+}
+footer .nous li {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+footer .nous li::before {
+  content: "•";
+  color: #fe895e;
+  margin-right: 5px;
+  font-weight: bold;
+}
+footer .nous li a {
+  color: black;
+}
+
+.icons a {
+  display: block;
+  margin-right: 30px;
+  margin-top: 5px;
+  font-size: 40px;
+  height: 30px;
+}
+.icons svg {
+  color: #fe895e;
 }
 
 /*# sourceMappingURL=style.css.map */
