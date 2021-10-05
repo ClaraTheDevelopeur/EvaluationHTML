@@ -17,6 +17,9 @@ body {
 }
 
 /********* NAVBAR ********/
+header button {
+  color: $orange;
+}
 nav button {
   float: right;
   position: relative;

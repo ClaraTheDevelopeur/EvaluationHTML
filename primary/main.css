@@ -13,6 +13,10 @@ body {
 }
 
 /********* NAVBAR ********/
+header button {
+  color: #fe895e;
+}
+
 nav button {
   float: right;
   position: relative;
