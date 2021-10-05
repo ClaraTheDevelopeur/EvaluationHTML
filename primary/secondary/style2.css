@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+/*font-family: 'Raleway', sans-serif;*/
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/************ HEADER ************/
+header img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+header h1 {
+  text-transform: uppercase;
+  color: #c5c5a9;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bolder;
+}
+@media screen and (max-width: 550px) {
+  header h1 {
+    font-size: 1.3em;
+  }
+}
+header .info {
+  margin: 30px;
+  text-align: justify;
+}
+header .info::first-letter {
+  color: #fe895e;
+  font-size: 2em;
+}
+header .places {
+  margin: 30px;
+  text-align: justify;
+}
+
+/****** TRAIT ******/
+.trait {
+  border: 1px solid #c5c5a9;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #fe895e;
+  text-shadow: 0px 0px 20px #fe895e;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+/********** BARRE DE PROGRESSION *********/
+.barre {
+  margin: 20px;
+  text-align: center;
+}
+.barre .progress {
+  height: 25px;
+}
+.barre .process-bar {
+  background-color: #fe895e;
+  height: 25px;
+}
+.barre .pourcent {
+  position: relative;
+  top: 3px;
+}
+
+/***** 2 CONTAINERS ******/
+.container {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  transition: 0.6s;
+}
+.container .box {
+  height: 100px;
+  width: 120px;
+  background-color: #c5c5a9;
+  border-radius: 10px;
+  transition: 1s ease-in-out;
+}
+.container .box:hover {
+  opacity: 0.7;
+  transform: translate(0) scale(1.1);
+  transition: 1s;
+}
+.container .box .achat,
+.container .box .joueurs {
+  position: relative;
+  text-align: center;
+  top: 4px;
+  font-size: 1.2em;
+}
+.container .box .joueurs {
+  top: 11px;
+}
+.container .box a {
+  color: black;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style2.css.map */

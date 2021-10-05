@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+/*font-family: 'Raleway', sans-serif;*/
+
+$blue: #a2c2eb;
+$green: #c5c5a9;
+$orange: #fe895e;
+$black: black;
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/************ HEADER ************/
+header {
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  h1 {
+    text-transform: uppercase;
+    color: $green;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bolder;
+    @media screen and (max-width: 550px) {
+      font-size: 1.3em;
+    }
+  }
+  .info {
+    margin: 30px;
+    text-align: justify;
+
+    &::first-letter {
+      color: $orange;
+      font-size: 2em;
+    }
+  }
+  .places {
+    margin: 30px;
+    text-align: justify;
+  }
+}
+
+/****** TRAIT ******/
+.trait {
+  border: 1px solid $green;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+h2 {
+  color: $orange;
+  text-shadow: 0px 0px 20px $orange;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+/********** BARRE DE PROGRESSION *********/
+.barre {
+  margin: 20px;
+  text-align: center;
+
+  .progress {
+    height: 25px;
+  }
+  .process-bar {
+    background-color: $orange;
+    height: 25px;
+  }
+  .pourcent {
+    position: relative;
+    top: 3px;
+  }
+}
+
+/***** 2 CONTAINERS ******/
+.container {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  transition: 0.6s;
+  .box {
+    height: 100px;
+    width: 120px;
+    background-color: $green;
+    border-radius: 10px;
+    transition: 1s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+      transform: translate(0) scale(1.1);
+      transition: 1s;
+    }
+
+    .achat,
+    .joueurs {
+      position: relative;
+      text-align: center;
+      top: 4px;
+      font-size: 1.2em;
+    }
+    .joueurs {
+      top: 11px;
+    }
+    a {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+}
